@@ -1,0 +1,13 @@
+select = ["F401", "Q00", "COM812", "D400", "F401", "F841", "W292", "I001"]
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+
+line-length = 120
+
+# Assume Python 3.11
+target-version = "py311"
+
+[per-file-ignores]
+# After change fixture working delete F401 rule
+"tests/*.py" = ["S101", "F401"]

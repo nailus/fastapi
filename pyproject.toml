@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "code"
+version = "0.1.0"
+description = ""
+authors = ["Artur Chernyshev"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.1"
+gunicorn = "^21.2.0"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+alembic = "^1.11.3"
+pydantic-settings = "^2.0.3"
+sqlalchemy = "^2.0.20"
+psycopg2 = "^2.9.7"
+sqlalchemy-utils = "^0.41.1"
+asyncpg = "^0.28.0"
+pydantic = "^2.3.0"
+
+[tool.poetry.group.dev.dependencies]
+httpx = "^0.25.0"
+faker = "^19.6.1"
+ruff = "^0.0.291"
+pytest = "^7.4.1"
+pytest-mock = "^3.11.1"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
